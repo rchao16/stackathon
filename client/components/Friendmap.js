@@ -45,7 +45,7 @@ class Friendmap extends Component {
 
     _renderPopup = (longitude, latitude, name, user) => {
         // const {popupInfo} = this.state
-        console.log(user)
+        
         return (
             <Popup 
             tipSize={5}
@@ -116,7 +116,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
       handleSubmit: (evt) => {
           evt.preventDefault()
-          console.log(evt.target)
+          
           const name = evt.target.name.value
           const description = evt.target.description.value
           const longitude = evt.target.longitude.value
