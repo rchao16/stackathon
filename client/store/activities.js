@@ -20,7 +20,7 @@ const createActivity = activity => ({type: CREATE_ACTIVITY, activity})
 export const postActivity = (activity) => async dispatch => {
     let res
     try{
-        console.log('poo', activity)
+        
         res = await axios.post('/api/activities/', activity)
         dispatch(createActivity(res.data))
     } catch (err) {
